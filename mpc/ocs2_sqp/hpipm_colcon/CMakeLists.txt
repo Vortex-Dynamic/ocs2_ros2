@@ -11,9 +11,11 @@ if(CMAKE_SYSTEM_PROCESSOR STREQUAL "x86_64")
 elseif(CMAKE_SYSTEM_PROCESSOR STREQUAL "aarch64")
     message(STATUS "Building for ARM64 architecture")
     set(TARGET "GENERIC")
+    set(GIT_TAG "255ffdf38d3a5e2c3285b29568ce65ae286e5faf")
 else()
     message(STATUS "Building for unknown architecture")
     set(TARGET "GENERIC")
+    set(GIT_TAG "255ffdf38d3a5e2c3285b29568ce65ae286e5faf")
 endif()
 
 ## Find ament_cmake macros and libraries
